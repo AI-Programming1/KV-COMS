@@ -1,2 +1,2 @@
 # KV-COMS
-Communicate using a cloudflare kv worker on a static website as a relay
+Communicate using a cloudflare kv worker as a relay on a static website.
