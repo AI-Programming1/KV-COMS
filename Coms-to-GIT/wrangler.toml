@@ -1,0 +1,26 @@
+name = "secure-messenger-worker"
+main = "index.js"
+compatibility_date = "2024-12-01"
+
+routes = [
+  { pattern = "sub.domain.com/*", zone_name = "domain.com" }
+]
+
+
+# =========================
+# KV NAMESPACES
+# =========================
+
+[[kv_namespaces]]
+binding = "ACCOUNT_KV"
+id = "xxxxxxxxxxxxxxxxxxxxxx"
+
+
+[[kv_namespaces]]
+binding = "MESSAGE_KV"
+id = "xxxxxxxxxxxxxxxxxxxx"
+
+[[kv_namespaces]]
+binding = "MEDIA_KV"
+id = "xxxxxxxxxxxxxxxxxxx"
+

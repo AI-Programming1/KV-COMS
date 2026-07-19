@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header>
+    <h2 id="userHandle"></h2>
+    <nav>
+      <button onclick="showTab('messages')">Messages</button>
+      <button onclick="showTab('settings')">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="messages" class="tab">
+      <div id="messageList"></div>
+
+      <form id="sendForm">
+        <input id="toHandle" placeholder="User handle" required>
+        <textarea id="messageText" placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </section>
+
+    <section id="settings" class="tab hidden">
+      <button onclick="deleteAllMessages()">Delete all messages</button>
+      <button onclick="deleteAccount()">Delete account</button>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

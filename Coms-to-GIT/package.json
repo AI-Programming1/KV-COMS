@@ -1,0 +1,15 @@
+{
+  "name": "secure-messenger-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-knowledge messaging Cloudflare Worker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "kv:list": "wrangler kv:namespace list"
+  },
+  "devDependencies": {
+    "wrangler": "^3.20.0"
+  }
+}
