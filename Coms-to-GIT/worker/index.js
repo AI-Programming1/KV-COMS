@@ -215,7 +215,7 @@ function json(obj) {
 
 function corsHeaders() {
   return {
-    "Access-Control-Allow-Origin": "https://myyear.net",
+    "Access-Control-Allow-Origin": "https://domain.com",
     "Access-Control-Allow-Methods": "GET,POST,DELETE,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400"
